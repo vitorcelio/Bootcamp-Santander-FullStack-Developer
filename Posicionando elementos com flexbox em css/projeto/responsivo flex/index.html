@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivo</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.928);
+        }
+
+        header {
+            max-width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: black;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            background-color: blueviolet;
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+        }
+
+        .menu{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .menu li a{
+            color: white;
+            display: block;
+            text-decoration: none;
+            margin-left: 10px;
+            padding: 10px 15px;
+            border-radius: 10px;
+        }
+
+        .menu li a:hover{
+            color: blueviolet;
+            background-color: white;
+        }
+
+        h1{
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container div{
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo"></div>
+        <ul class="menu">
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Produtos</a></li>
+            <li><a href="">Contato</a></li>
+            <li><a href="">Ex1</a></li>
+            <li><a href="">Ex2</a></li>
+        </ul>
+    </header>
+
+    <h1>Consoles</h1>
+    <section class="container">
+        <div>
+            <img src="img/eu.jpeg" alt="">
+        </div>
+        <div>
+            <img src="img/eu.jpeg" alt="">
+        </div>
+        <div>
+            <img src="img/eu.jpeg" alt="">
+        </div>
+        <div>
+            <img src="img/eu.jpeg" alt="">
+        </div>
+        <div>
+            <img src="img/eu.jpeg" alt="">
+        </div>
+        <div>
+            <img src="img/eu.jpeg" alt="">
+        </div>
+    </section>
+</body>
+
+</html>

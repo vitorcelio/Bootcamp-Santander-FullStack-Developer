@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .container {
+            max-width: 1200px;
+            justify-content: center;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-areas:
+                "nav item item"
+                "nav item item"
+                "nav item item"
+                "footer footer footer"
+        }
+
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .nav {
+            max-width: 300px;
+            min-width: 200px;
+            height: 900px;
+            background-color: #333;
+            border-radius: 20px;
+            grid-area: "nav";
+            grid-row: nav;
+        }
+
+        .item {
+            max-width: 300px;
+            min-width: 250px;
+            height: 300px;
+            background-color: #333;
+            border-radius: 20px;
+            grid-area: "item";
+        }
+
+        .footer {
+            width: auto;
+            height: 300px;
+            background-color: #333;
+            border-radius: 20px;
+            grid-area: "footer";
+            grid-column: footer;
+        }
+
+        @media (max-width: 758px) {
+            .container {
+                grid-template-areas:
+                    "nav item"
+                    "nav item"
+                    "nav item"
+                    "nav item"
+                    "nav item"
+                    "nav item"
+                    "footer footer"
+            }
+        }
+
+        @media (max-width: 500px) {
+            .nav{
+                height: 200px;
+            }
+            
+            .container {
+                grid-template-areas:
+                    "nav"
+                    "item"
+                    "item"
+                    "item"
+                    "item"
+                    "item"
+                    "footer"
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="nav"></div>
+        <div class="item">
+            <img src="https://github.com/vitorcelio.png" alt="">
+            <p>ITEM</p>
+        </div>
+        <div class="item">
+            <img src="https://github.com/vitorcelio.png" alt="">
+            <p>ITEM</p>
+        </div>
+        <div class="item">
+            <img src="https://github.com/vitorcelio.png" alt="">
+            <p>ITEM</p>
+        </div>
+        <div class="item">
+            <img src="https://github.com/vitorcelio.png" alt="">
+            <p>ITEM</p>
+        </div>
+        <div class="item">
+            <img src="https://github.com/vitorcelio.png" alt="">
+            <p>ITEM</p>
+        </div>
+        <div class="item">
+            <img src="https://github.com/vitorcelio.png" alt="">
+            <p>ITEM</p>
+        </div>
+        <div class="footer"></div>
+    </section>
+</body>
+
+</html>
